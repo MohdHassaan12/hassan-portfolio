@@ -1233,8 +1233,6 @@ body:hover .cursor-ring {
   gap: 1.25rem;
 }
 
-.skill-bar-item {}
-
 .skill-bar-header {
   display: flex;
   justify-content: space-between;
@@ -2799,5 +2797,247 @@ body:hover .cursor-ring {
   .roles-pills {
     justify-content: flex-start;
     max-width: none;
+  }
+}
+
+/* =============================================
+   MOBILE RESPONSIVE — COMPREHENSIVE FIXES
+   ============================================= */
+
+/* --- Tablet / Phablet (≤ 768px) --- */
+@media (max-width: 768px) {
+  /* Section headers — tighten spacing */
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Hero — compact padding & text */
+  .hero-content {
+    padding: 6rem 1.25rem 2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* About — stack cleanly */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .photo-card {
+    max-width: 280px;
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+
+  /* About stats — 2 columns on tablet */
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Roles strip — full-width description */
+  .roles-desc {
+    max-width: 100%;
+  }
+
+  /* Toast — stretch on mobile so it doesn't overflow */
+  .toast {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Modal — smaller padding on tablet */
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  /* Skills grid — 1 column on tablet if 2 is too tight */
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+  :root {
+    --section-pad: 3rem;
+  }
+
+  /* Reduce section-label spacing */
+  .section-label {
+    font-size: 0.75rem;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+
+  /* Hero — very small screens */
+  .hero-title {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .hero-cta {
+    gap: 0.75rem;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  /* About — single stat column on smallest phones */
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .stat-card {
+    padding: 1rem 0.4rem;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  /* Skills — single column */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-card {
+    padding: 1.5rem;
+  }
+
+  /* Tech icon grid — 3 cols instead of 4 */
+  .tech-icons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Project cards — already 1 col, tighten padding */
+  .project-body {
+    padding: 1.1rem;
+  }
+
+  /* Focus cards — already single col via 540px rule */
+  .focus-card {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Achievements — already 1 col via existing rule */
+  .achievement-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .achievement-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  /* Contact form */
+  .contact-grid {
+    gap: 2rem;
+  }
+
+  /* Roles — vertical stacking */
+  .roles-inner {
+    gap: 1.5rem;
+  }
+
+  .roles-pills {
+    gap: 0.5rem;
+  }
+
+  .role-pill {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.85rem;
+  }
+
+  /* Modal */
+  .modal-body {
+    padding: 1.25rem;
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  /* Footer nav — center links */
+  .footer-nav {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Buttons full width */
+  .about-actions .btn {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Cert row */
+  .cert-roadmap {
+    padding: 0 0.25rem;
+  }
+}
+
+/* --- Extra small / old phones (≤ 360px) --- */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-logo {
+    font-size: 1.05rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .tech-icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .role-pill {
+    font-size: 0.72rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.88rem;
+    padding: 0.65rem 1.25rem;
   }
 }
