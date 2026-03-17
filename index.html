@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Md Hassan — ML Systems & Cybersecurity Engineer. GATE & UGC NET 2025 Qualified. Specializing in production-grade ML pipelines, real-time inference, encrypted traffic analysis, and systems-level programming (C++). Open to ML Engineer, Data Engineer, and AI Systems roles." />
+  <meta name="keywords"
+    content="Md Hassan, ML systems engineer, data engineer, machine learning pipeline, production ML, real-time inference, autonomous vehicle, Woven Toyota, traffic analysis, VPN detection, intrusion detection, cybersecurity, C++, Docker, FastAPI, Python, Pandas, scikit-learn, GATE qualified, UGC NET, MANUU, Hyderabad" />
+  <meta name="author" content="Md Hassan" />
+  <meta property="og:title" content="Md Hassan — ML Systems & Cybersecurity Portfolio" />
+  <meta property="og:description"
+    content="ML Systems & Cybersecurity Engineer | GATE & UGC NET 2025 Qualified | Production ML • Real-time Inference • Traffic Analysis" />
+  <title>Md Hassan — ML Systems & Cybersecurity Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Hassan<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        GATE & UGC NET Qualified • Open to ML & Data Engineering Roles
+      </div>
+      <h1 class="hero-title reveal-up">
+        Hi, I'm <span class="gradient-text">Hassan</span>
+      </h1>
+      <div class="hero-subtitle reveal-up">
+        <span class="typed-prefix">I build </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        Final-year CS student at MANUU specialising in <strong>production-grade ML systems</strong> and cybersecurity &mdash;
+        from real-time inference pipelines to encrypted traffic analysis, VPN detection, and systems-level engineering in C++.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <i data-lucide="shield"></i> View Research Projects
+        </a>
+        <a href="assets/cv/Hassan_CV.pdf" class="btn btn-outline" download>
+          <i data-lucide="download"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="social-link"
+          aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/12mdhassan" target="_blank" rel="noopener" class="social-link"
+          aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="mailto:mdhassankalim@gmail.com" class="social-link" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ===== SECURITY FOCUS AREAS ===== -->
+  <section class="focus-section" id="focus">
+    <div class="container">
+      <div class="focus-grid">
+
+        <div class="focus-card reveal-up">
+          <div class="focus-icon">
+            <i data-lucide="radar"></i>
+          </div>
+          <h3>Threat Detection</h3>
+          <p>Building ML-powered systems that identify cyber threats in real time — from network-level anomalies to
+            application-layer attacks.</p>
+          <div class="focus-tags">
+            <span>IDS</span><span>Anomaly Detection</span><span>SIEM</span>
+          </div>
+        </div>
+
+        <div class="focus-card reveal-up focus-delay-1">
+          <div class="focus-icon focus-icon-teal">
+            <i data-lucide="network"></i>
+          </div>
+          <h3>Traffic Analysis</h3>
+          <p>Analysing encrypted packet flows using DPI and statistical fingerprinting to classify VPN tunnels and
+            deanonymise traffic without payload decryption.</p>
+          <div class="focus-tags">
+            <span>DPI</span><span>VPN Detection</span><span>Scapy</span>
+          </div>
+        </div>
+
+        <div class="focus-card reveal-up focus-delay-2">
+          <div class="focus-icon focus-icon-orange">
+            <i data-lucide="bot"></i>
+          </div>
+          <h3>ML for Security</h3>
+          <p>Applying classification, feature engineering, and ensemble methods to solve real-world security problems —
+            with measurable accuracy benchmarks.</p>
+          <div class="focus-tags">
+            <span>scikit-learn</span><span>Naive Bayes</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="focus-card reveal-up focus-delay-3">
+          <div class="focus-icon focus-icon-blue">
+            <i data-lucide="search"></i>
+          </div>
+          <h3>Digital Forensics</h3>
+          <p>Investigating phishing emails, spoofed domains, and obfuscated links by parsing headers, examining
+            metadata, and applying heuristic rule engines.</p>
+          <div class="focus-tags">
+            <span>Email Forensics</span><span>Wireshark</span><span>Nmap</span>
+          </div>
+        </div>
+
+        <div class="focus-card reveal-up focus-delay-3">
+          <div class="focus-icon" style="background: linear-gradient(135deg, rgba(234,179,8,0.15), rgba(234,179,8,0.05)); border-color: rgba(234,179,8,0.3);">
+            <i data-lucide="cpu" style="color: #eab308;"></i>
+          </div>
+          <h3>ML Systems Engineering</h3>
+          <p>Designing end-to-end ML pipelines for production environments — from data ingestion and model serving to containerised deployment with real-time inference.</p>
+          <div class="focus-tags">
+            <span>Docker</span><span>FastAPI</span><span>Inference</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-col reveal-left">
+          <div class="photo-card">
+            <img src="assets/images/profile.png" alt="MD Hassan — Profile Photo" class="profile-img" />
+            <div class="photo-decoration"></div>
+            <div class="photo-badge">
+              <i data-lucide="cpu"></i>
+              <span>ML Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col reveal-right">
+          <h3 class="about-greeting">Who am I?</h3>
+          <p class="about-text">
+            I'm <strong>MD Hassan</strong>, a final-year Computer Science student at Maulana Azad National Urdu
+            University (MANUU), Hyderabad, with a research focus in <em>cybersecurity and applied machine learning</em>.
+          </p>
+          <p class="about-text">
+            My work centres on building <strong>production-grade ML pipelines</strong> — from encrypted traffic analysis and VPN fingerprinting to real-time inference systems designed for high-stakes environments. I'm deeply committed to systems-level engineering, data pipeline reliability, and performance at scale.
+          </p>
+          <p class="about-text">
+            I'm also a <strong>GATE 2025</strong> and <strong>UGC NET 2025</strong> qualifier in Computer Science, and
+            a Founding Member of E-Cell MANUU. I'm passionate about the intersection of ML engineering and autonomous mobility &mdash; particularly Japan's leadership in robotics and automotive innovation.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number-lg">8.84</span>
+              <span class="stat-label">CGPA / 10</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="95">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Detection Acc.</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Nat. Exams</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary"><i data-lucide="send"></i> Get In Touch</a>
+            <a href="#projects" class="btn btn-ghost">See Projects <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">What I work with</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Security -->
+        <div class="skills-card reveal-up">
+          <h3 class="skills-card-title"><i data-lucide="shield"></i> Security & Networking</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Traffic Analysis & DPI</span><span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>VPN Behaviour Analysis</span><span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>TCP/IP & Network Protocols</span><span
+                  class="skill-percent">82%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Intrusion Detection</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Phishing & Email Forensics</span><span
+                  class="skill-percent">92%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="92"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML -->
+        <div class="skills-card reveal-up skill-delay-1">
+          <h3 class="skills-card-title"><i data-lucide="brain"></i> ML Systems & Pipelines</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Classification Algorithms</span><span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Feature Extraction & Selection</span><span
+                  class="skill-percent">85%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Model Evaluation & Tuning</span><span class="skill-percent">83%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="83"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Naive Bayes / Ensemble Methods</span><span
+                  class="skill-percent">80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Python (primary)</span><span class="skill-percent">90%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Docker & Containerisation</span><span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>FastAPI / REST Services</span><span class="skill-percent">78%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools with context -->
+        <div class="skills-card reveal-up skill-delay-2">
+          <h3 class="skills-card-title"><i data-lucide="wrench"></i> Tools & Languages</h3>
+          <div class="tool-list">
+            <div class="tool-item">
+              <div class="tool-header">
+                <span class="tool-name"><i data-lucide="activity"></i> Wireshark</span>
+                <span class="tool-level tool-level-expert">Expert</span>
+              </div>
+              <p class="tool-context">Used extensively in VPN research for packet capture, flow analysis, and protocol
+                dissection across encrypted tunnels.</p>
+            </div>
+            <div class="tool-item">
+              <div class="tool-header">
+                <span class="tool-name"><i data-lucide="scan"></i> Nmap</span>
+                <span class="tool-level tool-level-advanced">Advanced</span>
+              </div>
+              <p class="tool-context">Network scanning, host discovery, and service enumeration for security assessments
+                and lab environments.</p>
+            </div>
+            <div class="tool-item">
+              <div class="tool-header">
+                <span class="tool-name"><i data-lucide="crosshair"></i> Metasploit</span>
+                <span class="tool-level tool-level-intermediate">Intermediate</span>
+              </div>
+              <p class="tool-context">Exploitation framework used in controlled lab settings for understanding attack
+                surfaces and building better defences.</p>
+            </div>
+            <div class="tool-item">
+              <div class="tool-header">
+                <span class="tool-name"><i data-lucide="bar-chart-2"></i> Splunk</span>
+                <span class="tool-level tool-level-intermediate">Intermediate</span>
+              </div>
+              <p class="tool-context">Log ingestion and SIEM operations — querying security events and building
+                dashboards for threat monitoring.</p>
+            </div>
+            <div class="tool-item">
+              <div class="tool-header">
+                <span class="tool-name"><i data-lucide="code"></i> Python</span>
+                <span class="tool-level tool-level-expert">Expert</span>
+              </div>
+              <p class="tool-context">Primary language for all ML pipelines, packet parsing (Scapy), data analysis, and
+                automation scripts.</p>
+            </div>
+            <div class="tool-item">
+              <div class="tool-header">
+                <span class="tool-name"><i data-lucide="cpu"></i> C / C++</span>
+                <span class="tool-level tool-level-advanced">Advanced</span>
+              </div>
+              <p class="tool-context">Systems-level programming for performance-critical tasks — essential for real-time processing and on-vehicle computation where latency matters.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">What I've researched & built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="ml">ML / AI</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1: VPN Detection -->
+        <div class="project-card reveal-up" data-category="security ml">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-vpn.png" alt="VPN Detection & Traffic Deanonymisation" class="project-img"
+              loading="lazy" />
+            <div class="project-overlay">
+              <button class="btn btn-sm btn-glass" title="View project details" onclick="openModal('modal-vpn')">
+                <i data-lucide="maximize-2"></i> View Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-purple">Python</span>
+              <span class="tag tag-teal">ML</span>
+              <span class="tag tag-orange">DPI</span>
+              <span class="tag tag-blue">Networking</span>
+            </div>
+            <h3 class="project-title">VPN Detection & Traffic Deanonymisation</h3>
+            <p class="project-desc">Multi-layer detection pipeline integrating ML models with Deep Packet Inspection.
+              Achieved 90%+ VPN detection accuracy across multiple tunneling protocols without payload decryption.</p>
+            <div class="project-links">
+              <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+                  data-lucide="github"></i> GitHub</a>
+              <span class="project-date"><i data-lucide="calendar"></i> Jul 2025 – Present</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Phishing -->
+        <div class="project-card reveal-up proj-delay-1" data-category="security ml">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-phishing.png" alt="Phishing Email Detection System" class="project-img"
+              loading="lazy" />
+            <div class="project-overlay">
+              <button class="btn btn-sm btn-glass" title="View project details" onclick="openModal('modal-phishing')">
+                <i data-lucide="maximize-2"></i> View Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-purple">Python</span>
+              <span class="tag tag-teal">Naive Bayes</span>
+              <span class="tag tag-orange">Security</span>
+            </div>
+            <h3 class="project-title">Phishing Email Detection System</h3>
+            <p class="project-desc">Hybrid phishing detection framework combining rule-based heuristics with Naive Bayes
+              classifier. Achieved ~95% accuracy on benchmark datasets with real-time scanning capability.</p>
+            <div class="project-links">
+              <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+                  data-lucide="github"></i> GitHub</a>
+              <span class="project-date"><i data-lucide="calendar"></i> Aug 2024 – May 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Learn2Play -->
+        <div class="project-card reveal-up proj-delay-2" data-category="ml systems">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-sports.png" alt="Learn2Play Sports Learning Platform" class="project-img"
+              loading="lazy" />
+            <div class="project-overlay">
+              <button class="btn btn-sm btn-glass" title="View project details" onclick="openModal('modal-sports')">
+                <i data-lucide="maximize-2"></i> View Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-purple">Python</span>
+              <span class="tag tag-teal">Data Analysis</span>
+              <span class="tag tag-blue">Automation</span>
+            </div>
+            <h3 class="project-title">Learn2Play — Intelligent Sports Platform</h3>
+            <p class="project-desc">Intelligent sports learning platform leveraging data-driven modules to provide users
+              with performance insights and automated feedback for skill development.</p>
+            <div class="project-links">
+              <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+                  data-lucide="github"></i> GitHub</a>
+              <span class="project-date"><i data-lucide="calendar"></i> Dec 2024 – May 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Athletic Assistant -->
+        <div class="project-card reveal-up proj-delay-3" data-category="systems">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-fitness.png" alt="Athletic Assistant Fitness System" class="project-img"
+              loading="lazy" />
+            <div class="project-overlay">
+              <button class="btn btn-sm btn-glass" title="View project details" onclick="openModal('modal-fitness')">
+                <i data-lucide="maximize-2"></i> View Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-purple">C Programming</span>
+              <span class="tag tag-teal">BMI/BMR</span>
+              <span class="tag tag-blue">XR</span>
+            </div>
+            <h3 class="project-title">Athletic Assistant — Fitness System XR</h3>
+            <p class="project-desc">Modular fitness tracking system built in C with BMI/BMR logic, dynamic diet
+              planning, and architecture designed for future XR-based workout platform integration.</p>
+            <div class="project-links">
+              <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+                  data-lucide="github"></i> GitHub</a>
+              <span class="project-date"><i data-lucide="calendar"></i> Jan 2023 – May 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECT MODALS ===== -->
+  <!-- Modal: VPN -->
+  <div class="modal-overlay" id="modal-vpn" onclick="closeModal('modal-vpn')">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close" title="Close modal" onclick="closeModal('modal-vpn')"><i data-lucide="x"></i></button>
+      <img src="assets/images/project-vpn.png" alt="VPN Detection" class="modal-img" />
+      <div class="modal-body">
+        <div class="project-tags modal-tags">
+          <span class="tag tag-purple">Python</span><span class="tag tag-teal">ML</span>
+          <span class="tag tag-orange">DPI</span><span class="tag tag-blue">Networking</span>
+        </div>
+        <h2 class="modal-title">Multi-Layered VPN Detection & Traffic Deanonymisation</h2>
+        <p>A research-grade pipeline that integrates machine learning models with Deep Packet Inspection for real-time
+          VPN traffic identification and deanonymisation — without decrypting payloads.</p>
+        <ul class="modal-list">
+          <li>90%+ VPN detection accuracy across multiple tunneling protocols</li>
+          <li>Reduced false positives by ~25% via layered feature selection & traffic profiling</li>
+          <li>Analysed encrypted traffic patterns, flow metadata, packet timing & statistical fingerprints</li>
+          <li>Enabled granular deanonymisation without payload decryption</li>
+          <li>Designed for real-time monitoring in academic and controlled environments</li>
+        </ul>
+        <div class="project-links modal-links">
+          <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+              data-lucide="github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Phishing -->
+  <div class="modal-overlay" id="modal-phishing" onclick="closeModal('modal-phishing')">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close" title="Close modal" onclick="closeModal('modal-phishing')"><i
+          data-lucide="x"></i></button>
+      <img src="assets/images/project-phishing.png" alt="Phishing Detection" class="modal-img" />
+      <div class="modal-body">
+        <div class="project-tags modal-tags">
+          <span class="tag tag-purple">Python</span><span class="tag tag-teal">Naive Bayes</span>
+          <span class="tag tag-orange">Security</span>
+        </div>
+        <h2 class="modal-title">Phishing Email Detection System</h2>
+        <p>A hybrid phishing detection framework combining rule-based heuristics with a Naive Bayes classifier, capable
+          of real-time email scanning for enterprise and campus deployment.</p>
+        <ul class="modal-list">
+          <li>~95% detection accuracy on benchmark phishing datasets</li>
+          <li>Parsed email headers, body content, and embedded URLs</li>
+          <li>Identified spoofed domains, obfuscated links, and high-risk keywords</li>
+          <li>Lightweight ML models optimised for fast inference and scalability</li>
+          <li>Real-time scanning interface for campus and enterprise environments</li>
+        </ul>
+        <div class="project-links modal-links">
+          <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+              data-lucide="github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Sports -->
+  <div class="modal-overlay" id="modal-sports" onclick="closeModal('modal-sports')">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close" title="Close modal" onclick="closeModal('modal-sports')"><i
+          data-lucide="x"></i></button>
+      <img src="assets/images/project-sports.png" alt="Learn2Play" class="modal-img" />
+      <div class="modal-body">
+        <div class="project-tags modal-tags">
+          <span class="tag tag-purple">Python</span><span class="tag tag-teal">Data Analysis</span>
+          <span class="tag tag-blue">Automation</span>
+        </div>
+        <h2 class="modal-title">Learn2Play — Intelligent Sports Learning Platform</h2>
+        <p>An intelligent platform designed to enhance user sports skills through data analysis, automated feedback, and
+          performance tracking modules.</p>
+        <ul class="modal-list">
+          <li>Data-driven training modules with personalised feedback</li>
+          <li>Automated performance insights to support user skill improvement</li>
+          <li>Leveraged analytical models for training pattern recognition</li>
+          <li>Designed with modularity for scalability across different sports disciplines</li>
+        </ul>
+        <div class="project-links modal-links">
+          <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+              data-lucide="github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Fitness -->
+  <div class="modal-overlay" id="modal-fitness" onclick="closeModal('modal-fitness')">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close" title="Close modal" onclick="closeModal('modal-fitness')"><i
+          data-lucide="x"></i></button>
+      <img src="assets/images/project-fitness.png" alt="Athletic Assistant" class="modal-img" />
+      <div class="modal-body">
+        <div class="project-tags modal-tags">
+          <span class="tag tag-purple">C Programming</span><span class="tag tag-teal">BMI/BMR</span>
+          <span class="tag tag-blue">XR Architecture</span>
+        </div>
+        <h2 class="modal-title">Athletic Assistant — Fitness Automation System XR</h2>
+        <p>A fitness automation system that tracks user fitness metrics, implements rational diet planning, and is
+          architecturally designed for future XR integration.</p>
+        <ul class="modal-list">
+          <li>Modular fitness tracking system built in C Programming</li>
+          <li>BMI/BMR computation with personalised caloric recommendations</li>
+          <li>Dynamic diet planning engine based on user inputs</li>
+          <li>Architected for future XR-based (Extended Reality) workout platform integration</li>
+        </ul>
+        <div class="project-links modal-links">
+          <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="project-link"><i
+              data-lucide="github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE / EDUCATION ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">My journey</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Leadership</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i data-lucide="graduation-cap"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Oct 2022 — Present</div>
+            <h3 class="timeline-role">Bachelor of Technology — Computer Science</h3>
+            <span class="timeline-company">Maulana Azad National Urdu University (MANUU), Hyderabad, India</span>
+            <p class="timeline-desc">Specialising in Cybersecurity and Applied Machine Learning. Research focus on
+              encrypted traffic analysis, intrusion detection, and ML-based threat intelligence systems.</p>
+            <div class="timeline-highlight">CGPA: <strong>8.84 / 10</strong></div>
+            <div class="timeline-tags">
+              <span class="tag tag-teal">Cybersecurity</span>
+              <span class="tag tag-purple">AI / ML</span>
+              <span class="tag tag-blue">CS Core</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i data-lucide="users"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2024 — Present</div>
+            <h3 class="timeline-role">Technical Assistant</h3>
+            <span class="timeline-company">Skillship Hyderabad Foundation</span>
+            <p class="timeline-desc">Delivered hands-on training sessions in networking fundamentals and cybersecurity
+              awareness to students and early professionals, building practical security knowledge in the community.</p>
+            <div class="timeline-tags">
+              <span class="tag tag-orange">Teaching</span>
+              <span class="tag tag-teal">Networking</span>
+              <span class="tag tag-purple">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i data-lucide="lightbulb"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2023 — Present</div>
+            <h3 class="timeline-role">Founding Member — Entrepreneurship Cell (E-Cell)</h3>
+            <span class="timeline-company">MANUU, Hyderabad</span>
+            <p class="timeline-desc">One of the founding members of MANUU's Entrepreneurship Cell, helping establish a
+              platform for student innovation, startup culture, and tech-driven entrepreneurship initiatives on campus.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag tag-teal">Leadership</span>
+              <span class="tag tag-blue">Innovation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">National qualifications & credentials</span>
+        <h2 class="section-title">Achieve<span class="gradient-text">ments</span></h2>
+      </div>
+      <div class="achievements-grid reveal-up">
+
+        <div class="achievement-card">
+          <div class="achievement-icon"><i data-lucide="award"></i></div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">GATE 2025 — Qualified</h3>
+            <span class="achievement-sub">Graduate Aptitude Test in Engineering</span>
+            <p class="achievement-desc">Computer Science (CS) — Score: <strong>473</strong></p>
+            <div class="achievement-badge">National Level</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon"><i data-lucide="badge-check"></i></div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">UGC NET 2025 — Qualified</h3>
+            <span class="achievement-sub">University Grants Commission — NET</span>
+            <p class="achievement-desc">Computer Science Applications (CSA) — Score: <strong>144</strong></p>
+            <div class="achievement-badge">National Level</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon"><i data-lucide="shield-check"></i></div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">90%+ VPN Detection Accuracy</h3>
+            <span class="achievement-sub">Research Project Result</span>
+            <p class="achievement-desc">Multi-layered ML + DPI pipeline with ~25% false positive reduction</p>
+            <div class="achievement-badge achievement-badge-teal">Research</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon"><i data-lucide="target"></i></div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">~95% Phishing Detection Accuracy</h3>
+            <span class="achievement-sub">Research Project Result</span>
+            <p class="achievement-desc">Hybrid Naive Bayes + rule-based framework on benchmark datasets</p>
+            <div class="achievement-badge achievement-badge-teal">Research</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon"><i data-lucide="book-open"></i></div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">CGPA: 8.84 / 10</h3>
+            <span class="achievement-sub">B.Tech Computer Science — MANUU</span>
+            <p class="achievement-desc">Consistent academic performance across all semesters</p>
+            <div class="achievement-badge">Academic</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon"><i data-lucide="lightbulb"></i></div>
+          <div class="achievement-body">
+            <h3 class="achievement-title">Founding Member — E-Cell MANUU</h3>
+            <span class="achievement-sub">Entrepreneurship Cell, MANUU</span>
+            <p class="achievement-desc">Co-founded the university's first entrepreneurship and innovation cell</p>
+            <div class="achievement-badge achievement-badge-orange">Leadership</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ROADMAP ===== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">National Qualifications & Research Results</span>
+        <h2 class="section-title">Achieve<span class="gradient-text">ments & Credentials</span></h2>
+      </div>
+      <div class="cert-roadmap reveal-up">
+
+        <div class="cert-row">
+          <div class="cert-status-col">
+            <span class="cert-status-badge cert-earned"><i data-lucide="check-circle"></i> Earned</span>
+          </div>
+          <div class="cert-cards-row">
+            <div class="cert-road-card cert-card-earned">
+              <div class="cert-road-icon"><i data-lucide="award"></i></div>
+              <div>
+                <h4>GATE 2025</h4>
+                <span>Computer Science — Score: 473</span>
+              </div>
+            </div>
+            <div class="cert-road-card cert-card-earned">
+              <div class="cert-road-icon"><i data-lucide="badge-check"></i></div>
+              <div>
+                <h4>UGC NET 2025</h4>
+                <span>CS Applications (CSA) — Score: 144</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPEN TO ROLES ===== -->
+  <section class="roles-section">
+    <div class="container">
+      <div class="roles-inner reveal-up">
+        <div class="roles-left">
+          <span class="roles-label"><i data-lucide="briefcase"></i> Open to Opportunities</span>
+          <h2 class="roles-title">Actively seeking <span class="gradient-text">ML & systems engineering roles</span></h2>
+          <p class="roles-desc">Final-year CS student (graduating 2026) — available for internships, research positions,
+            and entry-level security roles.</p>
+        </div>
+        <div class="roles-pills">
+          <div class="role-pill">
+            <i data-lucide="cpu"></i>
+            <span>ML / Data Engineer Intern</span>
+          </div>
+          <div class="role-pill">
+            <i data-lucide="brain"></i>
+            <span>ML Systems Engineer</span>
+          </div>
+          <div class="role-pill">
+            <i data-lucide="shield"></i>
+            <span>Security Analyst</span>
+          </div>
+          <div class="role-pill">
+            <i data-lucide="database"></i>
+            <span>Data Pipeline Engineer</span>
+          </div>
+          <div class="role-pill">
+            <i data-lucide="network"></i>
+            <span>Network Security Engineer</span>
+          </div>
+          <div class="role-pill">
+            <i data-lucide="flask-conical"></i>
+            <span>AI Research Intern</span>
+          </div>
+        </div>
+        <a href="mailto:mdhassankalim@gmail.com" class="btn btn-primary roles-cta">
+          <i data-lucide="mail"></i> Hire Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Get in touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">
+            I'm open to ML engineering internships, research collaborations, and opportunities at the intersection of cybersecurity and autonomous systems. Particularly excited about production ML challenges in real-world, safety-critical environments. Let's connect!
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:mdhassankalim@gmail.com" class="contact-value">mdhassankalim@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener"
+                  class="contact-value">github.com/MohdHassaan12</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/12mdhassan" target="_blank" rel="noopener"
+                  class="contact-value">linkedin.com/in/12mdhassan</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Hyderabad, India 🇮🇳</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <span class="form-error" id="nameError">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="form-error" id="emailError">Please enter a valid email</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Research collaboration, job opportunity..."
+              required />
+            <span class="form-error" id="subjectError">Please enter a subject</span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."
+              required></textarea>
+            <span class="form-error" id="messageError">Please enter a message</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <i data-lucide="send"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>Hassan<span class="logo-bracket">/&gt;</span>
+        </a>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/MohdHassaan12" target="_blank" rel="noopener" class="social-link"
+            aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/12mdhassan" target="_blank" rel="noopener" class="social-link"
+            aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:mdhassankalim@gmail.com" class="social-link" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MD Hassan · Cybersecurity & AI Research Enthusiast · Hyderabad, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
