@@ -337,7 +337,8 @@
 /* Photo decoration */
 [data-theme="light"] .photo-badge {
   background: #FFFFFF;
-  border-color: rgba(91, 82, 240, 0.12);
+  color: var(--primary);
+  border: 1px solid rgba(91, 82, 240, 0.12);
   box-shadow: 0 8px 24px rgba(91, 82, 240, 0.12);
 }
 
@@ -2193,6 +2194,12 @@ body:hover .cursor-ring {
   background: rgba(251, 146, 60, 0.12);
   border-color: rgba(251, 146, 60, 0.3);
   color: #FED7AA;
+}
+
+.achievement-badge-gold {
+  background: rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.3);
+  color: #FFD700;
 }
 
 @media (max-width: 640px) {
