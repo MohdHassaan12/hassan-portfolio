@@ -127,12 +127,11 @@ function initTypingAnimation() {
   const el = document.getElementById('typedText');
   if (!el) return;
   const phrases = [
-    'ML Inference Pipelines',
-    'Real-time Detection Systems',
-    'Production-grade ML Models',
-    'VPN & Traffic Classifiers',
-    'Containerised AI Services',
-    'High-accuracy Security Tools',
+    'Intelligent Systems',
+    'Applied Machine Learning',
+    'Scalable Data Pipelines',
+    'AI for Cybersecurity',
+    'Network Anomaly Detection',
   ];
   let phraseIndex = 0;
   let charIndex = 0;
