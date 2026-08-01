@@ -896,21 +896,25 @@ body:hover .cursor-ring {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.6rem);
-  font-family: 'Fira Code', monospace;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  min-height: 2.4rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  min-height: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
   flex-wrap: wrap;
+  font-weight: 500;
 }
 
 .typed-text {
-  color: var(--secondary);
-  font-weight: 500;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
 }
 
 .typed-cursor {
