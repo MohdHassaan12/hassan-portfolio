@@ -127,11 +127,11 @@ function initTypingAnimation() {
   const el = document.getElementById('typedText');
   if (!el) return;
   const phrases = [
-    'Intelligent Systems',
-    'Applied Machine Learning',
-    'Scalable Data Pipelines',
-    'AI for Cybersecurity',
-    'Network Anomaly Detection',
+    'Building Intelligent Systems.',
+    'Advancing AI Research.',
+    'Exploring Generative AI.',
+    'Expanding into Photonics.',
+    'Engineering Real-World Solutions.',
   ];
   let phraseIndex = 0;
   let charIndex = 0;
